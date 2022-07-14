@@ -1,13 +1,37 @@
 /* style sheet */
 
 body {
-    background-color: #CCE9FA;
+    background-color: white;
     font-family: 'Gentium Plus', serif;
+    font-size: 125%;
+    background-image: url("images/cod_royalty_free.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
 
 }
 
 ul {
     list-style-type: none;
+    border-top: 5px solid #00007d;
+    border-left: 10px solid rgb(206, 4, 4);
+    padding-bottom: 25px;
+    background-image: linear-gradient(to right, #3333a2, #cccce8);
+    color: white;
+
+}
+
+.sectionTitle {
+    font-size: 175%;
+}
+
+h2 {
+    font-size: 300%;
+}
+
+#hours, #phoneAddress {
+    padding-right: 25px;
+    padding-bottom: 15px;
 }
 
 /* hides the title off the visible portion of the page */
@@ -32,7 +56,6 @@ ul {
 .time {
     float: right;
 }
-
 
 
 /* Grid container positioning */
@@ -103,18 +126,20 @@ footer {
 @media screen and (min-width: 1500px) {
     .infoContainer {
         display: grid;
-        grid-template-columns: auto auto auto auto auto auto;
+        grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto auto;
+        gap: 20px;
     }
     #hours {
-        grid-column-start: 3;
-        grid-column-end: 3;
+        grid-column-start: 6;
+        grid-column-end: 7;
     }
     #phoneAddress {
-        grid-column-start: 5;
-        grid-column-end: 5;
+        grid-column-start: 7;
+        grid-column-end: 8;
     }
     .menuContainer {
         display: grid;
-        grid-template-columns: auto auto auto auto;
+        grid-template-columns: auto auto auto;
+        gap: 10px;
     }
 }
