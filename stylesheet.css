@@ -1,0 +1,120 @@
+/* style sheet */
+
+body {
+    background-color: #CCE9FA;
+    font-family: 'Gentium Plus', serif;
+
+}
+
+ul {
+    list-style-type: none;
+}
+
+/* hides the title off the visible portion of the page */
+.hiddenOff {
+    overflow: hidden;
+    position: relative;
+}
+
+#title {
+    position: absolute;
+    right: -9999px;
+}
+
+/* styles the "menu" text at the top of the menu board */
+
+.menuHeader, footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.time {
+    float: right;
+}
+
+
+
+/* Grid container positioning */
+
+/* small screens */
+
+@media screen and (max-width: 799px) {
+
+    .infoContainer {
+        display: grid;
+        grid-template-columns: auto;
+    }
+
+.menuContainer {
+    display: grid;
+    grid-template-columns: auto;
+}
+
+footer {
+    width: 100%;
+    padding: 5px;
+    margin: auto 25%;
+}
+}
+
+/* medium screens */
+
+@media screen and (min-width: 800px) {
+
+    .infoContainer {
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+    .menuContainer {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+    footer {
+        width: 30%;
+        margin: auto;
+    }
+}
+
+/* large screens */
+
+@media screen and (min-width: 1001px) {
+    .infoContainer {
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+    }
+    #hours {
+        grid-column-start: 2;
+        grid-column-end: 3;
+    }
+    #phoneAddress {
+        grid-column-start: 3;
+        grid-column-end: 4;
+    }
+    .menuContainer {
+        display: grid;
+        grid-template-columns: auto auto auto;
+    }
+}
+
+/* extra large screens */
+
+@media screen and (min-width: 1500px) {
+    .infoContainer {
+        display: grid;
+        grid-template-columns: auto auto auto auto auto auto;
+    }
+    #hours {
+        grid-column-start: 3;
+        grid-column-end: 3;
+    }
+    #phoneAddress {
+        grid-column-start: 5;
+        grid-column-end: 5;
+    }
+    .menuContainer {
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+    }
+}
