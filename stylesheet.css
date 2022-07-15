@@ -11,6 +11,14 @@ body {
 
 }
 
+/* site logo */
+
+img{
+    width: 200px;
+}
+
+/* information boxes */
+
 ul {
     list-style-type: none;
     border-top: 5px solid #00007d;
@@ -68,7 +76,6 @@ footer {
     float: right;
 }
 
-
 /* Grid container positioning */
 
 /* small screens */
@@ -78,6 +85,12 @@ footer {
     .infoContainer {
         display: grid;
         grid-template-columns: auto;
+    }
+
+    header {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .menuContainer {
@@ -100,7 +113,7 @@ footer {
 
     .infoContainer {
         display: grid;
-        grid-template-columns: auto auto;
+        grid-template-columns: auto auto auto;
         gap: 5px;
     }
     .menuContainer {
@@ -151,6 +164,10 @@ footer {
         display: grid;
         grid-template-columns: auto auto auto auto auto auto;
         gap: 20px;
+    }
+    header {
+        grid-column-start: 1;
+        grid-column-end: 2;
     }
     #hours {
         grid-column-start: 3;
