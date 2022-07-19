@@ -48,6 +48,10 @@ h3 {
     font-style: italic;
 }
 
+#hoursAvail {
+    font-weight: bold;
+}
+
 #hours, #phoneAddress {
     padding-right: 35px;
     padding-bottom: 15px;
